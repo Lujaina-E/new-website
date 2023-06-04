@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Bodoni+Moda&family=Crimson+Text&display=swap');
+
+main{
+  display: flex;
+  min-height: 100vh;
+  color: rgb(39, 39, 39);
+  background-color:rgb(247, 240, 223);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-family: 'Amiri', serif;
+  /* font-family: 'Crimson Text', serif; */
+}
+
+.header-div{
+  z-index: 1;
+  position: fixed;
+  left: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: right;    
+    background-color: rgb(247, 240, 223);
+    width: 10%;
+}
+
+#github-link{
+  height: auto;
+  width: 42%;
+  margin-right: 1.75em;
+  
+}
+
+#linkedin-link{
+  height: auto;
+  width: 42%; 
+
+  margin-right: 1.5em;
+  margin-top: 1em;
+
+}
+
+#email-link{
+  height: auto;
+  width: 44%;
+
+  margin-top: 1em;
+  margin-right: 1.5em;
+
+}
+
+.stack-item:nth-child(1){
+  order: 2;
+}
+
+.stack-item:nth-child(2){
+  order: 1;
+}
+
+.meeting-phrase{
+  margin-left: 2%;
+  width: fit-content;
+  padding-bottom: 4%;
+  background-color: rgb(247, 240, 223);
+}
+
+
+.normal-text{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.019em;
+  width: 90%;
+  margin-left: 3%;
+  line-height: 180%;
+}
+
+.lujaina-pic{
+  margin-top: -15em;
+  margin-right: 0.5em;
+  margin-bottom: 14em;
+  border-radius: 50%;
+  width: 6em;
+}
+
+.personal-pic img{
+  transition: filter 0.3s ease-in-out;
+}
+
+.personal-pic:hover img {
+  filter: blur(10px);
+}
+
+.personal-pic::before {
+  content: attr(data-text);
+  color: rgb(15, 15, 15);
+  font-weight: bold;
+  top: -40%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 500;
+  transition: opacity 0.3s;
+}
+
+.personal-pic:hover::before {
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1.5s forwards;
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0.05;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* .typewriter{
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: typewriter;
+  animation-duration: 3s;
+  animation-timing-function: steps(28) 1;
+  animation-iteration-count: 1;
+  width: 100%;
+}
+
+@keyframes typewriter{
+  from {width: 0;}
+  to {width: 100%;}
+} */

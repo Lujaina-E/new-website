@@ -1,0 +1,35 @@
+.panel {
+    position: absolute;
+    background-color: #f4f2dc;
+    padding: 4%;
+    border: 1px solid #cac8b3;
+    cursor: pointer;
+    top: 100%;
+    left: 5%;
+    width: fit-content; 
+    max-width: 60ch;
+    z-index: 100;
+    }
+  
+  .panel-content {
+    font-family: 'Crimson Text', serif;
+    color: rgb(119, 119, 119);
+    font-size: 65%;
+  }
+  
+  .hover-text {
+    display: inline-block;
+    cursor: pointer;
+    max-width: 50ch;
+    text-decoration: underline;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+  }
+  
+  a:hover {
+    font-weight: bold;
+  }
+  
