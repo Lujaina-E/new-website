@@ -6,6 +6,10 @@ import github_logo from "./images/github_logo.png";
 import linkedin_logo from "./images/linkedin_logo.png";
 import email_logo from "./images/gmail_logo.png";
 import personalPhoto from "./images/Lujaina.jpg";
+import TV from './images/TV.png';
+import Application from './components/Application.js'
+
+
 function App() {
   return (
     <>
@@ -61,6 +65,24 @@ function App() {
       </header>
 
       <main className="stack-item fade-in">
+
+        <nav className="navbar">
+        <div>
+          <h1 className="intro">Lujaina Eldelebshany.</h1>
+        </div>
+          <ul className="nav-list">
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#experience">experience</a>
+            </li>
+          </ul>
+        </nav>
+
         <h1 className="meeting-phrase">Nice to meet you...</h1>
 
         <h3 className="normal-text typewriter">
@@ -117,15 +139,33 @@ function App() {
             development to tackle real-world problems and improve the user
             experience. I am also passionate about entrepreneurship and
             solutions that address real-world problems in sustainability and the
-            promotion of diversity. Additionally, I love to participate in case
-            competitions, entrepreneurship challenges, and hackathons where I
-            can propose solutions to experienced community leaders.
+            promotion of diversity. Additionally, I love to attend conferences,
+            participate in case competitions, entrepreneurship challenges, and
+            hackathons where I can network and propose solutions to experienced
+            community leaders.
           </b>
         </h3>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-      </main>
 
-      <section className="projects fade-in"></section>
+        <section className="projects fade-in">
+          <h1 className="heading-label meeting-phrase">Projects</h1>
+
+          <div className="project">
+
+            <img
+            className="tv"
+              src={TV}
+              alt="project setting"
+            ></img>
+
+<Application
+        name="My Application"
+        description="A brief description of my application"
+        githubLink="https://github.com/your_username/your_repository"
+      />
+          </div>
+        </section>
+      </main>
     </>
   );
 }

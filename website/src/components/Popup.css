@@ -9,6 +9,7 @@
     width: fit-content; 
     max-width: 60ch;
     z-index: 100;
+    border-radius: 8px;
     }
   
   .panel-content {
