@@ -6,9 +6,16 @@ import github_logo from "./images/github_logo.png";
 import linkedin_logo from "./images/linkedin_logo.png";
 import email_logo from "./images/gmail_logo.png";
 import personalPhoto from "./images/Lujaina.jpg";
-import TV from './images/TV.png';
-import Application from './components/Application.js'
-
+import TV from "./images/TV.png";
+import Application from "./components/Application.js";
+import app1 from "./images/app1.png";
+import app2 from "./images/app2.png";
+import app3 from "./images/app3.png";
+import app4 from "./images/app4.png";
+import app5 from "./images/app5.png";
+import app6 from "./images/app6.png";
+import app7 from "./images/app7.png";
+import app8 from "./images/app8.png";
 
 function App() {
   return (
@@ -17,7 +24,6 @@ function App() {
         <div className="header-div">
           <div
             className="personal-pic"
-            data-text="Fun fact! I'm a published and featured author!"
           >
             <img
               className="lujaina-pic"
@@ -65,11 +71,10 @@ function App() {
       </header>
 
       <main className="stack-item fade-in">
-
         <nav className="navbar">
-        <div>
-          <h1 className="intro">Lujaina Eldelebshany.</h1>
-        </div>
+          <div>
+            <h1 className="intro">Lujaina Eldelebshany.</h1>
+          </div>
           <ul className="nav-list">
             <li>
               <a href="#about-me">About Me</a>
@@ -82,9 +87,7 @@ function App() {
             </li>
           </ul>
         </nav>
-
         <h1 className="meeting-phrase">Nice to meet you...</h1>
-
         <h3 className="normal-text typewriter">
           My name is Lujaina. I am a 3rd year software and biomedical
           engineering student at the University of Calgary and a 2021{" "}
@@ -125,14 +128,8 @@ function App() {
               quarterfinalist and 1/700 global teams for Hult Prize 2023.
             </a>
           />
-          . Download my{" "}
-          <Popup
-            triggerText="resume"
-            popupText=<a href="https://drive.google.com/file/d/1JeXjIaSiSxEdPXWBfaNxKU8WhL2zzMKA/view?usp=sharing">
-              here!
-            </a>
-          />{" "}
-          to see the rest. <br /> <br />
+          .
+          <br /> <br />
           <b>
             {" "}
             I aspire to leverage my skills in machine learning and software
@@ -146,25 +143,98 @@ function App() {
           </b>
         </h3>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
         <section className="projects fade-in">
           <h1 className="heading-label meeting-phrase">Projects</h1>
 
-          <div className="project">
+          <div className="application">
+            <div className="image-container">
+              <img className="tv" src={TV} alt="project setting"></img>
+            </div>
 
-            <img
-            className="tv"
-              src={TV}
-              alt="project setting"
-            ></img>
+            <div className="application-container">
+              <Application
+                className="apps"
+                AppTitle="Sample"
+                imageSrc={app1}
+                description="Description of Application 1"
+                githubLink="https://github.com/your-username/repository1"
+              />
+              <Application
+                className="apps"
+                imageSrc={app2}
+                AppTitle="Sample"
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
+              <Application
+                className="apps"
+                AppTitle="Sample"
+
+                imageSrc={app3}
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
+              <Application
+                className="apps"
+                imageSrc={app4}   
+                             AppTitle="Sample"
+
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
+
+              <Application
+                className="apps"
+                AppTitle="Sample"
+
+                imageSrc={app5}
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
+
+              <Application
+                className="apps"
+                AppTitle="Sample"
+
+                imageSrc={app6}
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
 
 <Application
-        name="My Application"
-        description="A brief description of my application"
-        githubLink="https://github.com/your_username/your_repository"
-      />
+                className="apps"
+                AppTitle="Sample"
+
+                imageSrc={app7}
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
+
+<Application
+                className="apps"
+                                AppTitle="Sample"
+
+                imageSrc={app8}
+                description="Description of Application 2"
+                githubLink="https://github.com/your-username/repository2"
+              />
+
+              {/* Add more Application components as needed */}
+            </div>
           </div>
         </section>
+        <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br /> <br />
+        <br />
       </main>
     </>
   );

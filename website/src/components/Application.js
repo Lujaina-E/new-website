@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import GithubLogo from '../images/github_logo.png';
+import "./Application.css"
 
-const Application = ({ name, description, githubLink }) => {
+const Application = ({ imageSrc, AppTitle, description, githubLink }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleNameClick = () => {
-    setIsExpanded(!isExpanded);
-  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -19,23 +14,23 @@ const Application = ({ name, description, githubLink }) => {
 
   return (
     <div
-      className={`application-card ${isHovered ? 'hovered' : ''}`}
+      className="square-component"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="application-info">
-        <div className="name" onClick={handleNameClick}>
-          {name}
-        </div>
-        {isExpanded && (
-          <div className="expanded-info">
-            <div className="description">{description}</div>
+      <img src={imageSrc} alt="Application" />
+
+      {isHovered && (
+        <div className="translucent-window" onClick={handleMouseLeave}>
+          <div className="content">
+            <h2>{AppTitle}</h2>
+            <p>{description}</p>
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <img src={GithubLogo} alt="GitHub" className="github-logo" />
+              View on GitHub
             </a>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
