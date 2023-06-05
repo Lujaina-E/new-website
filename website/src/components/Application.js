@@ -23,10 +23,10 @@ const Application = ({ imageSrc, AppTitle, description, githubLink }) => {
       {isHovered && (
         <div className="translucent-window" onClick={handleMouseLeave}>
           <div className="content">
-            <h2>{AppTitle}</h2>
-            <p>{description}</p>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              View on GitHub
+            <h2 className="app-title">{AppTitle}</h2>
+            <p className="app-description">{description}</p>
+            <a className="app-link" href={githubLink} target="_blank" rel="noopener noreferrer">
+              Github
             </a>
           </div>
         </div>

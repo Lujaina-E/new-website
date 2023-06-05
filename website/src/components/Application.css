@@ -64,3 +64,22 @@
     backdrop-filter: blur(5px); /* Apply the blur effect */
   }
 
+.app-title{
+    text-align:center;
+    margin-top: -2%;
+    font-size: 2.5em;
+}
+
+.app-description{
+    text-align:center;
+    font-size: 1.25em;
+}
+
+.app-link{
+    text-align:center;
+    padding: 2%;
+    background-color:rgba(253, 216, 154);
+    border-radius: 1%;
+    margin-left: 35%;
+    border-radius: 5%;
+}

@@ -22,9 +22,7 @@ function App() {
     <>
       <header className="stack-item fade-in">
         <div className="header-div">
-          <div
-            className="personal-pic"
-          >
+          <div className="personal-pic">
             <img
               className="lujaina-pic"
               src={personalPhoto}
@@ -169,16 +167,14 @@ function App() {
               <Application
                 className="apps"
                 AppTitle="Sample"
-
                 imageSrc={app3}
                 description="Description of Application 2"
                 githubLink="https://github.com/your-username/repository2"
               />
               <Application
                 className="apps"
-                imageSrc={app4}   
-                             AppTitle="Sample"
-
+                imageSrc={app4}
+                AppTitle="Sample"
                 description="Description of Application 2"
                 githubLink="https://github.com/your-username/repository2"
               />
@@ -186,7 +182,6 @@ function App() {
               <Application
                 className="apps"
                 AppTitle="Sample"
-
                 imageSrc={app5}
                 description="Description of Application 2"
                 githubLink="https://github.com/your-username/repository2"
@@ -195,25 +190,22 @@ function App() {
               <Application
                 className="apps"
                 AppTitle="Sample"
-
                 imageSrc={app6}
                 description="Description of Application 2"
                 githubLink="https://github.com/your-username/repository2"
               />
 
-<Application
+              <Application
                 className="apps"
                 AppTitle="Sample"
-
                 imageSrc={app7}
                 description="Description of Application 2"
                 githubLink="https://github.com/your-username/repository2"
               />
 
-<Application
+              <Application
                 className="apps"
-                                AppTitle="Sample"
-
+                AppTitle="Sample"
                 imageSrc={app8}
                 description="Description of Application 2"
                 githubLink="https://github.com/your-username/repository2"
@@ -225,16 +217,13 @@ function App() {
         </section>
         <br />
         <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
-        <br /> <br />
+
         <br />
+
+        <section>
+          <h1 className="heading-label meeting-phrase">Experience</h1>
+
+        </section>
       </main>
     </>
   );
