@@ -18,7 +18,6 @@ main{
   height: auto;
   border-radius: 2%;
   overflow: hidden;
-  /* box-shadow:rgb(15, 15, 15) */
 }
 
 
@@ -49,6 +48,13 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.text-container{
+  display: flex;
+  align-items: center;  
 }
 
 .header-div{
@@ -74,19 +80,15 @@ main{
 #linkedin-link{
   height: auto;
   width: 42%; 
-
   margin-right: 1.5em;
   margin-top: 1em;
-
 }
 
 #email-link{
   height: auto;
   width: 44%;
-
   margin-top: 1em;
   margin-right: 1.5em;
-
 }
 
 .stack-item:nth-child(1){
@@ -97,13 +99,16 @@ main{
   order: 1;
 }
 
+.intro-to-me{
+  width: 250px;
+}
+
 .meeting-phrase{
   margin-left: 2%;
   width: fit-content;
   font-size: 3em;
   background-color: rgb(247, 240, 223);
 }
-
 
 .normal-text{
   font-size: 1.5rem;
@@ -115,42 +120,14 @@ main{
   line-height: 180%;
 }
 
-.lujaina-pic{
-  margin-top: -15em;
-  margin-right: 0.5em;
-  height: fit-content;
-  margin-bottom: 14em;
-  border-radius: 50%;
-  width: 6em;
+.personal-pic{
+  flex: 0 0 auto;
+  margin-right: 40px;
 }
 
 .personal-pic img{
   transition: filter 0.3s ease-in-out;
-}
-
-.personal-pic:hover img {
-  filter: blur(1px);
-}
-
-.personal-pic::before {
-  content: attr(data-text);
-  color: rgb(15, 15, 15);
-  font-weight: bold;
-  top: -40%;
-  left: 0;
-  width: 100%;
-  display: flex;
-  position: absolute;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  z-index: 500;
-  transition: opacity 0.3s;
-}
-
-.personal-pic:hover::before {
-  opacity: 1;
+  width: 385px;
 }
 
 .fade-in {
@@ -167,10 +144,12 @@ main{
   }
 }
 
+#projects{
+  padding-bottom: 6%;
+}
+
 .heading-label{
   font-size: 3em;
-    padding-top: 15%;
-    padding-bottom: 6%;
 }
 
 .navbar{
@@ -193,6 +172,7 @@ main{
   margin-left: 30%;
   margin: 2;
   margin-top: -0.25%;
+    margin-top: 0.5%;
 }
 
 .nav-list li{
@@ -269,6 +249,44 @@ main{
   z-index: 1;
   margin-left: 23%;
   max-width: 450px;
+}
+
+#progressBarContainer {
+  position: fixed;
+  z-index: 10;
+  background: rgba(255,255,255,0.05);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+#progressBar {
+  background: linear-gradient(to left, rgb(112, 65, 38), rgb(167, 144, 130));
+  transform-origin: top left;
+  transform: scale(0,0);
+  opacity: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 10px;
+  transform-origin: top;
+  position: absolute;
+}
+
+#progressBarContainer,
+#progressBar {
+  height: 100%;
+  height: 100vh;
+  transform-origin: top ;
+
+}
+
+footer{
+  font-family: 'Amiri', serif;
+  padding: 1%;
+  background-color:rgb(247, 240, 223);
+  text-align: center;
 }
 
 /* .typewriter{
