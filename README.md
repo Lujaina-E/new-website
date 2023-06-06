@@ -1,4 +1,4 @@
-# new-website
+# Personal Website
 Remade my personal website using React.
 
 ## Run 
