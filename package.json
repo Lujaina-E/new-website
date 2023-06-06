@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "html-react-parser": "^4.0.0",
+    "i": "^0.3.7",
+    "npm": "^9.6.7",
     "react-typewriter-effect": "^1.1.0",
     "typewriter-effect": "^2.20.1",
     "vercel": "^30.1.2"

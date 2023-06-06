@@ -21,6 +21,8 @@ import UC from "./images/ucalgary.jpeg";
 import SPP from "./images/SPP.png";
 import chata from "./images/chata.png";
 import olsen from "./images/olsen.png";
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const [textIndex, setTextIndex] = useState(0);
@@ -328,6 +330,7 @@ function App() {
       </main>
 
       <footer>Made in 2023</footer>
+      <Analytics />
     </>
   );
 }
