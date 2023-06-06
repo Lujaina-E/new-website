@@ -2,12 +2,15 @@
     display: flex;
     align-items: flex-start;
   }
+
   
   .experience-container {
     position: relative;
     margin-right: 10px;
     padding: 1%;
     padding-left: 4%;
+    margin-left: 5%;
+
   }
   
   .image-container-experience {
@@ -43,6 +46,7 @@
     overflow: hidden;
     margin-left: -95%;
     opacity: 0; 
+    border-radius: 2%;
     z-index: -1;
   }
   
@@ -51,3 +55,23 @@
     opacity: 1; 
   }
   
+  .timeline-text{
+    color:rgba(106, 92, 19, 0.663);
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -4%;
+
+  }
+
+  .role-text{
+    color: black;
+    font-weight: 200;
+    text-align: center;
+    margin-top: -4%;
+  }
+
+.description-text{
+  text-align: center;
+  margin-top: -3%;
+  max-width: 450px;
+}

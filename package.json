@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "html-react-parser": "^4.0.0",
     "react-typewriter-effect": "^1.1.0",
     "typewriter-effect": "^2.20.1"
   }

@@ -83,3 +83,10 @@
     margin-left: 35%;
     border-radius: 5%;
 }
+
+.app-tech{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color:rgb(152, 156, 130)
+}

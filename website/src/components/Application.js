@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Application.css"
 
-const Application = ({ imageSrc, AppTitle, description, githubLink }) => {
+const Application = ({ imageSrc, AppTitle, techUsed, description, githubLink }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -24,6 +24,7 @@ const Application = ({ imageSrc, AppTitle, description, githubLink }) => {
         <div className="translucent-window" onClick={handleMouseLeave}>
           <div className="content">
             <h2 className="app-title">{AppTitle}</h2>
+            <h3 className="app-tech">{techUsed}</h3>
             <p className="app-description">{description}</p>
             <a className="app-link" href={githubLink} target="_blank" rel="noopener noreferrer">
               Github

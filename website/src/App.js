@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import github_logo from "./images/github_logo.png";
 import linkedin_logo from "./images/linkedin_logo.png";
 import email_logo from "./images/gmail_logo.png";
@@ -7,7 +7,8 @@ import personalPhoto from "./images/Lujaina.jpg";
 import TV from "./images/TV.png";
 import Popup from "./components/Popup";
 import Application from "./components/Application.js";
-import Experience from "./components/Experience.js"; //component being edited
+import Experience from "./components/Experience.js"; 
+import TypeWriter from "./components/TypeWriter.js"; //hmm
 import app1 from "./images/app1.png";
 import app2 from "./images/app2.png";
 import app3 from "./images/app3.png";
@@ -29,12 +30,13 @@ function App() {
     "Synergizer.",
     "Innovator.",
   ];
+
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % textOptions.length);
-    }, 2000); // Change text every 2 seconds
+    }, 1500); // Change text every 2 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -98,10 +100,12 @@ function App() {
       </header>
 
       <main className="stack-item fade-in">
-      <div id="progressBarContainer">
-  <div id="progressBar" style={{ transform: `scaleY(${scroll})`, opacity: `${scroll}` }} />
-</div>
-
+        <div id="progressBarContainer">
+          <div
+            id="progressBar"
+            style={{ transform: `scaleY(${scroll})`, opacity: `${scroll}` }}
+          />
+        </div>
         <nav className="navbar">
           <div className="intro-to-me">
             <h1 className="intro">{textOptions[textIndex]}</h1>
@@ -119,7 +123,7 @@ function App() {
           </ul>
         </nav>
         <h1 id="about" className="meeting-phrase">
-          Nice to meet you...
+          {/* {word} */}
         </h1>
         <h3 className="normal-text typewriter">
           <div className="text-container">
@@ -189,8 +193,7 @@ function App() {
                 development to tackle real-world problems and improve the user
                 experience. I am also passionate about entrepreneurship and
                 solutions that address real-world problems in sustainability and
-                the promotion of diversity. Additionally, I love to attend
-                conferences, participate in case competitions, entrepreneurship
+                the promotion of diversity. Additionally, I love to <Popup triggerText=" attend conferences" popupText="I helped host Canada's largest Undergraduate Engineering Conference, CELC 2023, where i helped raise a $165,000 sponsorship effort!" /> , participate in case competitions, entrepreneurship
                 challenges, and hackathons where I can network and propose
                 solutions to experienced community leaders.
               </b>
@@ -198,6 +201,10 @@ function App() {
           </div>
         </h3>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <br />
+        <br />
+        <br /> <br />
+        <br />
         <section className="projects fade-in">
           <h1 id="projects" className="heading-label meeting-phrase">
             Projects
@@ -211,70 +218,79 @@ function App() {
             <div className="application-container">
               <Application
                 className="apps"
-                AppTitle="Sample"
+                AppTitle="FIFA2022- Rest API"
+                techUsed="Transformers, Numpy, Pandas, BERT-Clustering"
                 imageSrc={app1}
-                description="Description of Application 1"
-                githubLink="https://github.com/your-username/repository1"
+                description="Scraped 50,000 tweets publicly and created a BERT-clustering model to observe the correlation between a Arab-hosted World Cup and public sentiment about social matters regarding the Middle East."
+                githubLink="https://github.com/Lujaina-E/Fifa2022-BERT"
               />
               <Application
                 className="apps"
                 imageSrc={app2}
-                AppTitle="Sample"
-                description="Description of Application 2"
-                githubLink="https://github.com/your-username/repository2"
+                AppTitle="Lotion"
+                techUsed="React, Javascript, CSS, HTML"
+                description="Developed a note-taking application using local storage."
+                githubLink="https://github.com/Lujaina-E/LOTION"
               />
               <Application
                 className="apps"
-                AppTitle="Sample"
+                AppTitle="Obituary Generator"
+                techUsed="AWS, React, Terraform, Python"
                 imageSrc={app3}
-                description="Description of Application 3"
-                githubLink="https://github.com/your-username/repository2"
+                description="Generates an obituary using OpenAI GPT engine using user's input lifetime, name, and image for the deceased."
+                githubLink="https://github.com/ParsaKargari/Obituaries"
               />
+
               <Application
                 className="apps"
                 imageSrc={app4}
-                AppTitle="Sample"
-                description="Description of Application 4"
-                githubLink="https://github.com/your-username/repository2"
+                AppTitle="Alzhemier's Disease Predictor"
+                techUsed="Python, TensorFlow, Flask, React"
+                description="Predicts likelihood of developing Alzhemier's through MRI images, allows physicians to upload their own images to improve the CNN model."
+                githubLink="https://github.com/SYS-NG/CNHack_2023"
               />
 
               <Application
                 className="apps"
-                AppTitle="Sample"
+                AppTitle="StyleVision"
+                techUsed=""
                 imageSrc={app5}
-                description="Description of Application 5"
+                description="Coming soon"
                 githubLink="https://github.com/your-username/repository2"
               />
 
               <Application
                 className="apps"
-                AppTitle="Sample"
+                AppTitle="UniQuest"
+                techUsed="React, Flask, Figma, Python, QR API, Typescript"
                 imageSrc={app6}
-                description="Description of Application 6"
-                githubLink="https://github.com/your-username/repository2"
+                description="Tier 1 1st Place Winner at CalgaryHacks 2023. This mobile application dynamically scans QR codes and awards students using points that can be be redeemed at paid University services."
+                githubLink="https://github.com/natewu/UniQuest"
               />
 
               <Application
                 className="apps"
-                AppTitle="Sample"
+                AppTitle="Museum Database Archive"
+                techUsed="MySQL, Python"
                 imageSrc={app7}
-                description="Description of Application 7"
-                githubLink="https://github.com/your-username/repository2"
+                description="Implemented search system for archived museum artifacts database system through a Python interface, along with Python login connection. Demonstrated knowledge of entity relationships."
+                githubLink="https://github.com/Lujaina-E/museum-project-hackerman4000"
               />
-
+              {/*
               <Application
                 className="apps"
                 AppTitle="Sample"
+                                techUsed=""
+
                 imageSrc={app8}
                 description="Description of Application 8"
                 githubLink="https://github.com/your-username/repository2"
-              />
+              /> */}
 
               {/* Add more Applications*/}
             </div>
           </div>
         </section>
-
         <br />
         <section>
           <br />
@@ -285,19 +301,27 @@ function App() {
           </h1>
           <Experience
             imageUrl={UC}
-            description="Description for Experience 1"
+            timeline="May 2023 - current"
+            role="Undergraduate Researcher"
+            description="Researching the effects of magnetic fields on circadian rhythms, and automating manual processes to decrease labour and increase measurement accuracy."
           />
           <Experience
             imageUrl={SPP}
-            description="Description for Experience 1"
+            timeline="May 2022 - Dec 2022"
+            role="Deep Social Media Analyst"
+            description="Mining public tweets and preprocessing for vectorization for BERT. Handled data to support academic papers being written through the School of Public Policy."
           />
           <Experience
             imageUrl={olsen}
-            description="Description for Experience 1"
+            timeline=" Sept 2021 - Dec 2021"
+            role="Machine Learning Engineer Intern"
+            description="Engineered 8-regression and tree based models, and achieved 93% accuracy for client-automated process in alignment with process milestones."
           />
           <Experience
             imageUrl={chata}
-            description="Description for Experience 1"
+            timeline=" June 2021 - August 2021"
+            role="Machine Learning Engineer Intern"
+            description="Coordinated a feature to detect word significance in NLP, and strengthened existing models based on findings from 2 BERT papers."
           />
         </section>
         <br />
