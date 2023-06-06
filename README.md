@@ -9,7 +9,8 @@ To view the website locally, follow these steps:
   <li>Pip install requirements.txt for additional libraries </li>
   <li>   Start the development server: npm start </li>
  <li>Open your preferred web browser and visit http://localhost:3000. </li>
-
+<ol>
+  
 ## Future Features
   
   <ul>
