@@ -7,7 +7,7 @@ import personalPhoto from "./images/Lujaina.jpg";
 import TV from "./images/TV.png";
 import Popup from "./components/Popup";
 import Application from "./components/Application.js";
-import Experience from "./components/Experience.js"; 
+import Experience from "./components/Experience.js";
 import TypeWriter from "./components/TypeWriter.js"; //hmm
 import app1 from "./images/app1.png";
 import app2 from "./images/app2.png";
@@ -22,7 +22,6 @@ import SPP from "./images/SPP.png";
 import chata from "./images/chata.png";
 import olsen from "./images/olsen.png";
 import { Analytics } from '@vercel/analytics/react';
-
 
 function App() {
   const [textIndex, setTextIndex] = useState(0);
@@ -73,6 +72,7 @@ function App() {
 
   return (
     <>
+
       <header className="stack-item fade-in">
         <div className="header-div">
           <div>
@@ -195,9 +195,14 @@ function App() {
                 development to tackle real-world problems and improve the user
                 experience. I am also passionate about entrepreneurship and
                 solutions that address real-world problems in sustainability and
-                the promotion of diversity. Additionally, I love to <Popup triggerText=" attend conferences" popupText="I helped host Canada's largest Undergraduate Engineering Conference, CELC 2023, where i helped raise a $165,000 sponsorship effort!" /> , participate in case competitions, entrepreneurship
-                challenges, and hackathons where I can network and propose
-                solutions to experienced community leaders.
+                the promotion of diversity. Additionally, I love to{" "}
+                <Popup
+                  triggerText=" attend conferences"
+                  popupText="I helped host Canada's largest Undergraduate Engineering Conference, CELC 2023, where i helped raise a $165,000 sponsorship effort!"
+                />{" "}
+                , participate in case competitions, entrepreneurship challenges,
+                and hackathons where I can network and propose solutions to
+                experienced community leaders.
               </b>
             </div>
           </div>
@@ -331,11 +336,9 @@ function App() {
 
       <footer>Made in 2023</footer>
 
-      <html lang="en">
-      <body>
-        <Analytics />
-      </body>
-    </html>
+      <script defer src="/_vercel/insights/script.js"></script>
+
+
     </>
   );
 }
