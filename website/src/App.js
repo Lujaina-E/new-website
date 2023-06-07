@@ -336,7 +336,7 @@ function App() {
 
       <footer>Made in 2023</footer>
 
-      <script defer src="/_vercel/insights/script.js"></script>
+      {/* <script defer src="/_vercel/insights/script.js"></script> */}
 
 
     </>
