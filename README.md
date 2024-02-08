@@ -10,16 +10,15 @@ To view the website locally, follow these steps:
   <li>   Start the development server: npm start </li>
  <li>Open your preferred web browser and visit http://localhost:3000. </li>
 <ol>
-  
+  <br>
 ## Future Features
   
   <ul>
     <li> More animations</li>
     <li> More cohesive responsiveness</li>
-    
   </ul>
 
-  
+ <br> 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
