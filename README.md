@@ -18,6 +18,8 @@ To view the website locally, follow these steps:
     <li> More cohesive responsiveness</li>
     
   </ul>
+
+  
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
