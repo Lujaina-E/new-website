@@ -1,24 +1,41 @@
 # Personal Website
-Remade my personal website using React.
 
-## Run 
-To view the website locally, follow these steps:
-<ol>
-  <li> Clone this repository: git clone [https://github.com/Lujaina-E/new-website] </li>
-  <li>Install dependencies: npm install </li>
-  <li>Pip install requirements.txt for additional libraries </li>
-  <li>   Start the development server: npm start </li>
- <li>Open your preferred web browser and visit http://localhost:3000. </li>
-<ol>
-  <br>
-## Future Features 
-  
-  <ul>
-    <li> More animations</li>
-    <li> More cohesive responsiveness</li>
-  </ul>
+This repository contains the revamped version of my personal website, developed using React.
 
- <br> 
-## Licensing 
+## Getting Started
 
-This project is licensed under the [MIT License](LICENSE).
+To run the website locally, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Lujaina-E/new-website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+   
+4. Install additional libraries (if any) listed in requirements.txt:
+
+```bash
+pip install -r requirements.txt
+```
+5. Start the development server
+
+  ```bash
+   npm start
+  ```
+
+6. Open your preferred web browser and visit http://localhost:3000.
+
+# Future Features
+
+Enhancements planned for future releases include:
+
+- More captivating animations.
+- Improved and cohesive responsiveness.
+   
+# Licensing
+
+This project is licensed under the [MIT License](LICENSE). Feel free to explore, modify, and distribute the code within the terms specified in the license.
