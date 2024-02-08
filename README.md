@@ -11,7 +11,7 @@ To view the website locally, follow these steps:
  <li>Open your preferred web browser and visit http://localhost:3000. </li>
 <ol>
   <br>
-## Future Features
+## Future Features 
   
   <ul>
     <li> More animations</li>
@@ -19,6 +19,6 @@ To view the website locally, follow these steps:
   </ul>
 
  <br> 
-## License
+## Licensing 
 
 This project is licensed under the [MIT License](LICENSE).
