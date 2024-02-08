@@ -2,6 +2,18 @@
 
 This repository contains the revamped version of my personal website, developed using React.
 
+# Future Features
+
+Enhancements planned for future releases include:
+
+- More captivating animations.
+- Improved and cohesive responsiveness.
+   
+# Licensing
+
+This project is licensed under the [MIT License](LICENSE). Feel free to explore, modify, and distribute the code within the terms specified in the license.
+
+
 ## Getting Started
 
 To run the website locally, follow these steps:
@@ -29,13 +41,3 @@ pip install -r requirements.txt
 
 6. Open your preferred web browser and visit http://localhost:3000.
 
-# Future Features
-
-Enhancements planned for future releases include:
-
-- More captivating animations.
-- Improved and cohesive responsiveness.
-   
-# Licensing
-
-This project is licensed under the [MIT License](LICENSE). Feel free to explore, modify, and distribute the code within the terms specified in the license.
